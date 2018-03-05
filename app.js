@@ -46,4 +46,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+const server = app.listen(3000, function() {
+	console.log('listening on localhost:3000');
+});
+
 module.exports = app;
